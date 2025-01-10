@@ -1,145 +1,252 @@
 html,
 body {
-  background-color: #d8ccc0;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    background-color: #d8ccc0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  /* height: 100%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .atz-logo img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
-  height: 30px;
-  width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15px;
+    width: 90px;
 }
 
-input[type="checkbox"] {
-  display: none;
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media (min-width: 320px) and (max-width: 410px) {
+    .atz-logo img {
+        padding:15px;
+    }
+
+    .book {
+        position: relative;
+        width: 355px;
+        height: 490px;
+        margin-left: 5px;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        background-color: white;
+        border-radius: 10px;
+    } 
+    
+    .pages{
+        margin-top: -10px;
+        background-color: black;
+        width: 320px;
+        height: 480px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin-left: 320px;
+        padding: 0;
+        width: 30px;
+    }
+
+    li{
+        height: 60px;
+        display: block;
+        position: static;
+        padding: 10px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-family: monospace;
+        font-size: 8px;
+        text-align: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    li.active{
+        position: absolute;
+        z-index: 9;
+    }
+
+    li#ateez{
+       background-color: #f28e3f; 
+    }
+
+    li#hongjoong{
+        z-index: 8;
+        background-color: #f44e66;
+        margin-top: 50px;
+    }
+
+    li#seonghwa{
+       z-index: 7;
+       margin-top: -30px;
+        background-color: #f39bcb;
+    }
+
+    li#yunho{
+        z-index: 6;
+        margin-top: -30px;
+        background-color: #8eb1f0;
+    }
+
+    li#yeosang{
+        z-index: 5;
+        margin-top: -30px;
+        background-color: #f9db81;
+    }
+
+    li#san{
+        z-index: 4;
+        margin-top: -30px;
+        background-color: #a8cc7f;
+    }
+
+    li#mingi{
+        z-index: 3;
+        margin-top: -30px;
+        background-color: #9a9899;
+    }
+
+    li#wooyoung{
+        z-index: 2;
+        margin-top: -30px;
+        background-color: #3c3c3c;
+        color: white;
+    }
+
+    li#jongho{
+        z-index: 1;
+        margin-top: -30px;
+        background-color: #a979cd;
+    }
+
 }
 
-#page1 ~ .pages div.page1 {
-  -webkit-transform: rotateY(-5deg);
-  -moz-transform: rotateY(-5deg);
-  transform: rotateY(-5deg);
+/* smartphones, Android phones, landscape iPhone */
+@media (min-width: 410px) {
+    .atz-logo img {
+        padding:30px;
+    }
+
+    .book {
+        position: relative;
+        width: 400px;
+        height: 600px;
+        margin-left: 5px;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        background-color: white;
+        border-radius: 10px;
+    } 
+    
+    .pages{
+        margin-top: -10px;
+        background-color: black;
+        width: 365px;
+        height: 590px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin-left: 365px;
+        padding: 0;
+        width: 30px;
+    }
+
+    li{
+        height: 70px;
+        display: block;
+        position: static;
+        padding: 10px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-family: monospace;
+        font-size: 8px;
+        text-align: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    li.active{
+        position: absolute;
+        z-index: 9;
+    }
+
+    li#ateez{
+       background-color: #f28e3f; 
+    }
+
+    li#hongjoong{
+        z-index: 8;
+        background-color: #f44e66;
+        margin-top: 50px;
+    }
+
+    li#seonghwa{
+       z-index: 7;
+       margin-top: -30px;
+        background-color: #f39bcb;
+    }
+
+    li#yunho{
+        z-index: 6;
+        margin-top: -30px;
+        background-color: #8eb1f0;
+    }
+
+    li#yeosang{
+        z-index: 5;
+        margin-top: -30px;
+        background-color: #f9db81;
+    }
+
+    li#san{
+        z-index: 4;
+        margin-top: -30px;
+        background-color: #a8cc7f;
+    }
+
+    li#mingi{
+        z-index: 3;
+        margin-top: -30px;
+        background-color: #9a9899;
+    }
+
+    li#wooyoung{
+        z-index: 2;
+        margin-top: -30px;
+        background-color: #3c3c3c;
+        color: white;
+    }
+
+    li#jongho{
+        z-index: 1;
+        margin-top: -30px;
+        background-color: #a979cd;
+    }
 }
 
-#page1:checked ~ .pages div.page1 {
-  -webkit-transform: rotateY(-140deg);
-  -moz-transform: rotateY(-140deg);
-  transform: rotateY(-140deg);
- 
+@media (min-width: 600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
 
-/* #page2 ~ .pages div.page2 {
-  -webkit-transform: rotateY(-32deg);
-  -moz-transform: rotateY(-32deg);
-  transform: rotateY(-32deg);
+@media (min-width: 801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 
-#page2:checked ~ .pages div.page2 {
-  -webkit-transform: rotateY(-140deg);
-  -moz-transform: rotateY(-140deg);
-  transform: rotateY(-140deg);
+@media (min-width: 1025px) {
+    /* big landscape tablets, laptops, and desktops */
 }
 
-#page3 ~ .pages div.page3 {
-  -webkit-transform: rotateY(-30deg);
-  -moz-transform: rotateY(-30deg);
-  transform: rotateY(-30deg);
-}
-
-#page3:checked ~ .pages div.page3 {
-  -webkit-transform: rotateY(-140deg);
-  -moz-transform: rotateY(-140deg);
-  transform: rotateY(-140deg);
-}
-
-#page4 ~ .pages div.page4 {
-  -webkit-transform: rotateY(-28deg);
-  -moz-transform: rotateY(-28deg);
-  transform: rotateY(-28deg);
-}
-
-#page4:checked ~ .pages div.page4 {
-  -webkit-transform: rotateY(-140deg);
-  -moz-transform: rotateY(-140deg);
-  transform: rotateY(-140deg);
-} */
-
-.book {
-  position: relative;
-  width: 400px;
-  height: 550px;
-  margin-left: 5px;
-  /* -webkit-perspective: 350px;
-  -moz-perspective: 350px;
-  perspective: 350px; */
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.book .pages,
-.book .pages > div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.book .pages {
-  width: 100%;
-  height: 100%;
-  top: 1%;
-  left: 2%;
-  z-index: 50;
-}
-
-.book .pages > div {
-  width: 100%;
-  height: 100%;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  transform-origin: left center;
-  -webkit-transition-property: transform;
-  -moz-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease;
-  -moz-transition-timing-function: ease;
-  transition-timing-function: ease;
-  background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-  background: -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-  background: -ms-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-  background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-  box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1),
-    inset -1px 0px 1px rgba(150, 150, 150, 0.2);
-  border-radius: 0px 5px 5px 0px;
-  -webkit-transition-duration: 1s;
-}
-.book .pages > div:hover {
-  box-shadow: inset 1px 0px 2px rgba(50, 50, 50, 0.1),
-    inset -3px 1px 1px rgba(150, 150, 150, 0.2);
-}
-
-.book .pages > div label {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  text-align: center;
-  vertical-align: middel;
-}
+@media (min-width: 1281px) {}

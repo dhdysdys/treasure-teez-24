@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,44 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <title>For Atiny</title>
 </head>
+
 <body>
     <div class="atz-logo">
         <img src="img/Ateez-Logo-fix.png" alt="atz-logo" srcset="">
     </div>
-    
+
     <div class="container">
         <div class="book">
-            <input type="checkbox" name="page1" id="page1">
-            <input type="checkbox" name="page2" id="page2">
-            <input type="checkbox" name="page3" id="page3">
-            <input type="checkbox" name="page4" id="page4">
+            <!-- PAGES -->
             <div class="pages">
-              <div class="page1">
-                <label for="page1"></label>
-              </div>
-              <div class="page2">
-                <label for="page2"></label>
-              </div>
-              <div class="page3">
-                <label for="page3"></label>
-              </div>
-              <div class="page4">
-                <label for="page4"></label>
-              </div>
+                  <!-- DIVIDER -->
+                  <div class="divider">
+                    <ul>
+                        <li class="active" id="ateez">ATEEZ</li>
+                        <li id="hongjoong">HONGJOONG</li>
+                        <li id="seonghwa">SEONGHWA</li>
+                        <li id="yunho">YUNHO</li>
+                        <li id="yeosang">YEOSANG</li>
+                        <li id="san">SAN</li>
+                        <li id="mingi">MINGI</li>
+                        <li id="wooyoung">WOOYOUNG</li>
+                        <li id="jongho">JONGHO</li>
+                    </ul>
+                </div>
             </div>
+        </div>
     </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    // SET BG PAGE SAME WITH ACTIVE INDEX TAB
+    let get_active_id = document.querySelector(".active")
+    let active_style = getComputedStyle(get_active_id)
+
+    if (get_active_id) {
+        $(".pages").css("background-color", active_style.backgroundColor)
+    }
+</script>
+
 </html>

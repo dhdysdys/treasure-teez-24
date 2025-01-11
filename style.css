@@ -22,41 +22,209 @@ body {
     width: 90px;
 }
 
-/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @media (min-width: 320px) and (max-width: 410px) {
     .atz-logo img {
-        padding:15px;
+        padding: 15px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    .column {
+        padding: 5px;
+        box-sizing: border-box;
+        flex: 100%;
+    }
+
+    .left {
+        width: 90%;
+        /* background-color: yellow; to view the area*/
+    }
+
+    .right {
+        width: 3%;
+        /* background-color: red; to view the area */
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    img.paper-clip-1{
+        margin-top: -20px;
+        margin-left: 5px;
+        width: 50px;
+        height: 55px;
+    }
+
+    img.paper-clip-2{
+        margin-top: -20px;
+        margin-left: -20px;
+        width: 50px;
+        height: 55px;
     }
 
     .book {
-        position: relative;
+        position: static;
         width: 355px;
-        height: 490px;
-        margin-left: 5px;
+        height: 500px;
         -webkit-transform-style: preserve-3d;
         -moz-transform-style: preserve-3d;
         transform-style: preserve-3d;
         background-color: white;
         border-radius: 10px;
-    } 
-    
-    .pages{
-        margin-top: -10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
+    .pages {
+        margin-top: 9px;
         background-color: black;
         width: 320px;
         height: 480px;
     }
 
-    ul{
+    .sticker-row{
+        margin-top: -115px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .year-column{
+        z-index: 12;
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+    .year-column#year-2{
+        margin-left: 45px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: #cc4f61;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        border-radius: 50%;
+
+    }
+
+    .year-column#year-0{
+        margin-top: -7px;
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: #989898;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .year-column#year-21{
+        margin-left: -8px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: #a9ce81;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .year-column#year-4{
+        margin-top: -3px;
+        margin-left: -6px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: #f6d87e;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        border-radius: 50%;
+        transform: rotate(-25deg);
+    }
+
+    .sticker-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .title-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 70px;
+        z-index: 11;
+        margin-left: 20px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 10px; 
+    }
+
+    .title-border{
+        width: 265px;
+        height: 85px;
+        margin: 0;
+        padding: 0;
+        border-width: 5px;
+        border-style: double;
+        border-color: #ea313f;
+        border-radius: 8px;
+    }
+
+    .title{
+        font-size: 22px;
+        font-family: "Oswald", serif;
+        font-weight: 700;
+    }
+
+    .title-line-1{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .title-line-2{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: -20px;
+        line-height: -5px;
+    }
+
+    ul {
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        margin-left: 320px;
+        margin-top: 9px;
         padding: 0;
         width: 30px;
     }
 
-    li{
+    li {
         height: 60px;
         display: block;
         position: static;
@@ -70,59 +238,59 @@ body {
         border-bottom-right-radius: 10px;
     }
 
-    li.active{
-        position: absolute;
+    li.active {
+        position: relative;
         z-index: 9;
     }
 
-    li#ateez{
-       background-color: #f28e3f; 
+    li#ateez {
+        background-color: #f28e3f;
     }
 
-    li#hongjoong{
+    li#hongjoong {
         z-index: 8;
         background-color: #f44e66;
-        margin-top: 50px;
+        margin-top: -30px;
     }
 
-    li#seonghwa{
-       z-index: 7;
-       margin-top: -30px;
+    li#seonghwa {
+        z-index: 7;
+        margin-top: -30px;
         background-color: #f39bcb;
     }
 
-    li#yunho{
+    li#yunho {
         z-index: 6;
         margin-top: -30px;
         background-color: #8eb1f0;
     }
 
-    li#yeosang{
+    li#yeosang {
         z-index: 5;
         margin-top: -30px;
         background-color: #f9db81;
     }
 
-    li#san{
+    li#san {
         z-index: 4;
         margin-top: -30px;
         background-color: #a8cc7f;
     }
 
-    li#mingi{
+    li#mingi {
         z-index: 3;
         margin-top: -30px;
         background-color: #9a9899;
     }
 
-    li#wooyoung{
+    li#wooyoung {
         z-index: 2;
         margin-top: -30px;
         background-color: #3c3c3c;
         color: white;
     }
 
-    li#jongho{
+    li#jongho {
         z-index: 1;
         margin-top: -30px;
         background-color: #a979cd;
@@ -133,38 +301,206 @@ body {
 /* smartphones, Android phones, landscape iPhone */
 @media (min-width: 410px) {
     .atz-logo img {
-        padding:30px;
+        padding: 30px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    .column {
+        padding: 5px;
+        box-sizing: border-box;
+        flex: 100%;
+    }
+
+    .left {
+        width: 90%;
+        /* background-color: yellow; to view the area*/
+    }
+
+    .right {
+        width: 3%;
+        /* background-color: red; to view the area */
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    img.paper-clip-1{
+        margin-top: -20px;
+        margin-left: 5px;
+        width: 50px;
+        height: 55px;
+    }
+
+    img.paper-clip-2{
+        margin-top: -20px;
+        margin-left: -20px;
+        width: 50px;
+        height: 55px;
     }
 
     .book {
-        position: relative;
+        position: static;
         width: 400px;
-        height: 600px;
+        height: 620px;
         margin-left: 5px;
         -webkit-transform-style: preserve-3d;
         -moz-transform-style: preserve-3d;
         transform-style: preserve-3d;
         background-color: white;
         border-radius: 10px;
-    } 
-    
-    .pages{
-        margin-top: -10px;
-        background-color: black;
-        width: 365px;
-        height: 590px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    ul{
+    .pages {
+        margin-top: 9px;
+        background-color: black;
+        width: 365px;
+        height: 602px;
+    }
+
+    .sticker-row{
+        margin-top: -5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .year-column{
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+    .year-column#year-2{
+        margin-left: 45px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: #cc4f61;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        border-radius: 50%;
+
+    }
+
+    .year-column#year-0{
+        margin-top: -7px;
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: #989898;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .year-column#year-21{
+        margin-left: -8px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: #a9ce81;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .year-column#year-4{
+        margin-top: -3px;
+        margin-left: -6px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: #f6d87e;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        border-radius: 50%;
+        transform: rotate(-25deg);
+    }
+
+    .sticker-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .title-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 70px;
+        z-index: 11;
+        margin-left: 20px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 10px; 
+    }
+
+    .title-border{
+        width: 265px;
+        height: 85px;
+        margin: 0;
+        padding: 0;
+        border-width: 5px;
+        border-style: double;
+        border-color: #ea313f;
+        border-radius: 8px;
+    }
+
+    .title{
+        font-size: 22px;
+        font-family: "Oswald", serif;
+        font-weight: 700;
+    }
+
+    .title-line-1{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .title-line-2{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: -20px;
+        line-height: -5px;
+    }
+
+    ul {
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        margin-left: 365px;
+        margin-top: 9px;
         padding: 0;
         width: 30px;
     }
 
-    li{
+    li {
         height: 70px;
         display: block;
         position: static;
@@ -178,67 +514,215 @@ body {
         border-bottom-right-radius: 10px;
     }
 
-    li.active{
-        position: absolute;
+    li.active {
+        position: relative;
         z-index: 9;
     }
 
-    li#ateez{
-       background-color: #f28e3f; 
+    li#ateez {
+        background-color: #f28e3f;
     }
 
-    li#hongjoong{
+    li#hongjoong {
         z-index: 8;
         background-color: #f44e66;
-        margin-top: 50px;
+        margin-top: -26px;
     }
 
-    li#seonghwa{
-       z-index: 7;
-       margin-top: -30px;
+    li#seonghwa {
+        z-index: 7;
+        margin-top: -26px;
         background-color: #f39bcb;
     }
 
-    li#yunho{
+    li#yunho {
         z-index: 6;
-        margin-top: -30px;
+        margin-top: -26px;
         background-color: #8eb1f0;
     }
 
-    li#yeosang{
+    li#yeosang {
         z-index: 5;
-        margin-top: -30px;
+        margin-top: -26px;
         background-color: #f9db81;
     }
 
-    li#san{
+    li#san {
         z-index: 4;
-        margin-top: -30px;
+        margin-top: -26px;
         background-color: #a8cc7f;
     }
 
-    li#mingi{
+    li#mingi {
         z-index: 3;
-        margin-top: -30px;
+        margin-top: -26px;
         background-color: #9a9899;
     }
 
-    li#wooyoung{
+    li#wooyoung {
         z-index: 2;
-        margin-top: -30px;
+        margin-top: -26px;
         background-color: #3c3c3c;
         color: white;
     }
 
-    li#jongho{
+    li#jongho {
         z-index: 1;
-        margin-top: -30px;
+        margin-top: -26px;
         background-color: #a979cd;
     }
 }
 
 @media (min-width: 600px) {
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+     .atz-logo img {
+        padding: 30px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    .column {
+        padding: 5px;
+        box-sizing: border-box;
+        flex: 100%;
+    }
+
+    .left {
+        width: 90%;
+        /* background-color: yellow; to view the area*/
+    }
+
+    .right {
+        width: 3%;
+        /* background-color: red; to view the area */
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    img.paper-clip-1{
+        margin-top: -20px;
+        margin-left: 5px;
+        width: 50px;
+        height: 55px;
+    }
+
+    img.paper-clip-2{
+        margin-top: -20px;
+        margin-left: -20px;
+        width: 50px;
+        height: 55px;
+    }
+
+    .book {
+        position: static;
+        width: 400px;
+        height: 620px;
+        margin-left: 5px;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .pages {
+        margin-top: 9px;
+        background-color: black;
+        width: 365px;
+        height: 602px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin-top: 9px;
+        padding: 0;
+        width: 30px;
+    }
+
+    li {
+        height: 70px;
+        display: block;
+        position: static;
+        padding: 10px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-family: monospace;
+        font-size: 8px;
+        text-align: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    li.active {
+        position: relative;
+        z-index: 9;
+    }
+
+    li#ateez {
+        background-color: #f28e3f;
+    }
+
+    li#hongjoong {
+        z-index: 8;
+        background-color: #f44e66;
+        margin-top: -26px;
+    }
+
+    li#seonghwa {
+        z-index: 7;
+        margin-top: -26px;
+        background-color: #f39bcb;
+    }
+
+    li#yunho {
+        z-index: 6;
+        margin-top: -26px;
+        background-color: #8eb1f0;
+    }
+
+    li#yeosang {
+        z-index: 5;
+        margin-top: -26px;
+        background-color: #f9db81;
+    }
+
+    li#san {
+        z-index: 4;
+        margin-top: -26px;
+        background-color: #a8cc7f;
+    }
+
+    li#mingi {
+        z-index: 3;
+        margin-top: -26px;
+        background-color: #9a9899;
+    }
+
+    li#wooyoung {
+        z-index: 2;
+        margin-top: -26px;
+        background-color: #3c3c3c;
+        color: white;
+    }
+
+    li#jongho {
+        z-index: 1;
+        margin-top: -26px;
+        background-color: #a979cd;
+    }
 }
 
 @media (min-width: 801px) {

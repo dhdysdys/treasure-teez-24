@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
     <title>For Atiny</title>
 </head>
 
@@ -16,24 +23,57 @@
 
     <div class="container">
         <div class="book">
-            <!-- PAGES -->
-            <div class="pages">
-                  <!-- DIVIDER -->
-                  <div class="divider">
-                    <ul>
-                        <li class="active" id="ateez">ATEEZ</li>
-                        <li id="hongjoong">HONGJOONG</li>
-                        <li id="seonghwa">SEONGHWA</li>
-                        <li id="yunho">YUNHO</li>
-                        <li id="yeosang">YEOSANG</li>
-                        <li id="san">SAN</li>
-                        <li id="mingi">MINGI</li>
-                        <li id="wooyoung">WOOYOUNG</li>
-                        <li id="jongho">JONGHO</li>
-                    </ul>
+            <div class="row">
+                <div class="column left">
+                    <!-- PAGES -->
+                    <div class="pages">
+                        <div class="page-content">
+                            <!-- PAPER CLIP -->
+                            <img src="/img/paper-clip-1.png" class="paper-clip-1" alt="paper-clip-1">
+                            <img src="/img/paper-clip-2.png" class="paper-clip-2" alt="paper-clip-2">
+
+                            <div class="title-container ">
+                                <div class="title title-border">
+                                    <p class="title-line-1">OUR TREASURE STORY</p>
+                                    <p class="title-line-2">With ATINY</p>
+                                </div>
+
+                            </div>
+
+                            <!-- 2024 STICKER -->
+                            <div class="sticker-row">
+
+
+                                <p class="year-column" id="year-2">2</p>
+                                <p class="year-column" id="year-0">0</p>
+                                <p class="year-column" id="year-21">2</p>
+                                <p class="year-column" id="year-4">4</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column right">
+                    <!-- DIVIDER -->
+                    <div class="divider">
+                        <ul>
+                            <li class="active" id="ateez">ATEEZ</li>
+                            <li id="hongjoong">HONGJOONG</li>
+                            <li id="seonghwa">SEONGHWA</li>
+                            <li id="yunho">YUNHO</li>
+                            <li id="yeosang">YEOSANG</li>
+                            <li id="san">SAN</li>
+                            <li id="mingi">MINGI</li>
+                            <li id="wooyoung">WOOYOUNG</li>
+                            <li id="jongho">JONGHO</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 
@@ -41,9 +81,9 @@
 <script>
     // SET BG PAGE SAME WITH ACTIVE INDEX TAB
     let get_active_id = document.querySelector(".active")
-    let active_style = getComputedStyle(get_active_id)
 
     if (get_active_id) {
+        let active_style = getComputedStyle(get_active_id)
         $(".pages").css("background-color", active_style.backgroundColor)
     }
 </script>

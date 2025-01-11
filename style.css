@@ -368,7 +368,7 @@ body {
     }
 
     .sticker-row{
-        margin-top: -5px;
+        margin-top: -115px;
         display: flex;
         flex-direction: row;
     }
@@ -450,7 +450,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 250px;
+        width: 290px;
         height: 70px;
         z-index: 11;
         margin-left: 20px;
@@ -461,7 +461,7 @@ body {
     }
 
     .title-border{
-        width: 265px;
+        width: 305px;
         height: 85px;
         margin: 0;
         padding: 0;
@@ -576,7 +576,7 @@ body {
 @media (min-width: 600px) {
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 
-     .atz-logo img {
+    .atz-logo img {
         padding: 30px;
     }
 

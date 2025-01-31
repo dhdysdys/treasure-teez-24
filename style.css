@@ -56,15 +56,15 @@ body {
         display: table;
         clear: both;
     }
-    
-    img.paper-clip-1{
+
+    img.paper-clip-1 {
         margin-top: -20px;
         margin-left: 5px;
         width: 50px;
         height: 55px;
     }
 
-    img.paper-clip-2{
+    img.paper-clip-2 {
         margin-top: -20px;
         margin-left: -20px;
         width: 50px;
@@ -88,22 +88,23 @@ body {
         background-color: black;
         width: 320px;
         height: 480px;
+        box-shadow: 1px 1px 2px gray;
     }
 
-    .sticker-row{
+    .sticker-row {
         margin-top: -115px;
         display: flex;
         flex-direction: row;
     }
 
-    .year-column{
+    .year-column {
         z-index: 12;
         padding: 0;
-        margin:0;
+        margin: 0;
         box-sizing: border-box;
     }
 
-    .year-column#year-2{
+    .year-column#year-2 {
         margin-left: 45px;
         width: 30px;
         height: 30px;
@@ -118,7 +119,7 @@ body {
 
     }
 
-    .year-column#year-0{
+    .year-column#year-0 {
         margin-top: -7px;
         margin-left: 5px;
         width: 30px;
@@ -133,7 +134,7 @@ body {
         border-radius: 50%;
     }
 
-    .year-column#year-21{
+    .year-column#year-21 {
         margin-left: -8px;
         width: 30px;
         height: 30px;
@@ -147,7 +148,7 @@ body {
         border-radius: 50%;
     }
 
-    .year-column#year-4{
+    .year-column#year-4 {
         margin-top: -3px;
         margin-left: -6px;
         width: 30px;
@@ -169,7 +170,7 @@ body {
         clear: both;
     }
 
-    .title-container{
+    .title-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -181,10 +182,10 @@ body {
         background-color: white;
         border-radius: 10px;
         padding: 15px;
-        margin-top: 10px; 
+        margin-top: 10px;
     }
 
-    .title-border{
+    .title-border {
         width: 265px;
         height: 85px;
         margin: 0;
@@ -195,24 +196,102 @@ body {
         border-radius: 8px;
     }
 
-    .title{
+    /* folded */
+    .title-border:before {
+        content: '';
+        position: absolute;
+        top: 145px; 
+        left: 24px;
+        border-bottom: 15px solid #f28e3f;
+        border-right: 15px solid #c0c0c0;
+        border-top-right-radius: 5px;
+        width: 0;
+    }
+
+    .title {
         font-size: 22px;
         font-family: "Oswald", serif;
         font-weight: 700;
     }
 
-    .title-line-1{
+    .title-line-1 {
         justify-content: center;
         text-align: center;
         align-items: center;
         margin-top: 10px;
     }
-    .title-line-2{
+
+    .title-line-2 {
         justify-content: center;
         text-align: center;
         align-items: center;
         margin-top: -20px;
         line-height: -5px;
+    }
+
+    .sticker-ateez{
+        position: relative;
+        background-color: #dab896;
+        float: right;
+        width: 150px;
+        height: 25px;
+        top: 75px;
+        right: 22px;
+        transform: rotate(-5deg);
+    }
+
+    .sticker-ateez > p {
+        margin-top: 8px;
+        font-size: 10px;
+        font-family: "Courier Prime", serif;
+        font-weight: 500;
+        text-align: center;
+        color: #534737;
+        /* padding: 5px; */
+    }
+
+    .title-atz-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 25px;
+        z-index: 11;
+        margin-left: 80px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 125px;
+    }
+
+    .title-atz-border {
+        width: 145px;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        border-width: 5px;
+        border-style: double;
+        border-color: #ea313f;
+        border-radius: 8px;
+    }
+
+    .title-atz {
+        font-size: 22px;
+        font-family: "Courier Prime", serif;
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+    .atz-stamp {
+        float: left;
+        margin-top: 50px;
+        margin-left: 10px;
+        transform: rotate(-15deg);
+        opacity: 0.5;
     }
 
     ul {
@@ -236,6 +315,7 @@ body {
         text-align: center;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        box-shadow: 1px 1px 2px gray;
     }
 
     li.active {
@@ -332,15 +412,15 @@ body {
         display: table;
         clear: both;
     }
-    
-    img.paper-clip-1{
+
+    img.paper-clip-1 {
         margin-top: -20px;
         margin-left: 5px;
         width: 50px;
         height: 55px;
     }
 
-    img.paper-clip-2{
+    img.paper-clip-2 {
         margin-top: -20px;
         margin-left: -20px;
         width: 50px;
@@ -365,21 +445,22 @@ body {
         background-color: black;
         width: 365px;
         height: 602px;
+        box-shadow: 1px 1px 2px gray;
     }
 
-    .sticker-row{
+    .sticker-row {
         margin-top: -115px;
         display: flex;
         flex-direction: row;
     }
 
-    .year-column{
+    .year-column {
         padding: 0;
-        margin:0;
+        margin: 0;
         box-sizing: border-box;
     }
 
-    .year-column#year-2{
+    .year-column#year-2 {
         margin-left: 45px;
         width: 30px;
         height: 30px;
@@ -394,7 +475,7 @@ body {
 
     }
 
-    .year-column#year-0{
+    .year-column#year-0 {
         margin-top: -7px;
         margin-left: 5px;
         width: 30px;
@@ -409,7 +490,7 @@ body {
         border-radius: 50%;
     }
 
-    .year-column#year-21{
+    .year-column#year-21 {
         margin-left: -8px;
         width: 30px;
         height: 30px;
@@ -423,7 +504,7 @@ body {
         border-radius: 50%;
     }
 
-    .year-column#year-4{
+    .year-column#year-4 {
         margin-top: -3px;
         margin-left: -6px;
         width: 30px;
@@ -445,7 +526,7 @@ body {
         clear: both;
     }
 
-    .title-container{
+    .title-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -457,10 +538,10 @@ body {
         background-color: white;
         border-radius: 10px;
         padding: 15px;
-        margin-top: 10px; 
+        margin-top: 10px;
     }
 
-    .title-border{
+    .title-border {
         width: 305px;
         height: 85px;
         margin: 0;
@@ -471,24 +552,102 @@ body {
         border-radius: 8px;
     }
 
-    .title{
+    /* folded  */
+    .title-border:before {
+        content: '';
+        position: absolute;
+        top: 145px; 
+        left: 24px;
+        border-bottom: 15px solid #f28e3f;
+        border-right: 15px solid #c0c0c0;
+        border-top-right-radius: 5px;
+        width: 0;
+    }
+
+    .title {
         font-size: 22px;
         font-family: "Oswald", serif;
         font-weight: 700;
     }
 
-    .title-line-1{
+    .title-line-1 {
         justify-content: center;
         text-align: center;
         align-items: center;
         margin-top: 10px;
     }
-    .title-line-2{
+
+    .title-line-2 {
         justify-content: center;
         text-align: center;
         align-items: center;
         margin-top: -20px;
         line-height: -5px;
+    }
+
+    .sticker-ateez{
+        position: relative;
+        background-color: #dab896;
+        float: right;
+        width: 150px;
+        height: 25px;
+        top: 75px;
+        right: 28px;
+        transform: rotate(-5deg);
+    }
+
+    .sticker-ateez > p {
+        margin-top: 8px;
+        font-size: 10px;
+        font-family: "Courier Prime", serif;
+        font-weight: 500;
+        text-align: center;
+        color: #534737;
+        /* padding: 5px; */
+    }
+
+    .title-atz-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 25px;
+        z-index: 11;
+        margin-left: 110px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 125px;
+    }
+
+    .title-atz-border {
+        width: 145px;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        border-width: 5px;
+        border-style: double;
+        border-color: #ea313f;
+        border-radius: 8px;
+    }
+
+    .title-atz {
+        font-size: 22px;
+        font-family: "Courier Prime", serif;
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+    .atz-stamp {
+        float: left;
+        margin-top: 160px;
+        margin-left: 10px;
+        transform: rotate(-15deg);
+        opacity: 0.5;
     }
 
     ul {
@@ -512,6 +671,7 @@ body {
         text-align: center;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        box-shadow: 1px 1px 2px gray;
     }
 
     li.active {
@@ -608,15 +768,15 @@ body {
         display: table;
         clear: both;
     }
-    
-    img.paper-clip-1{
+
+    img.paper-clip-1 {
         margin-top: -20px;
         margin-left: 5px;
         width: 50px;
         height: 55px;
     }
 
-    img.paper-clip-2{
+    img.paper-clip-2 {
         margin-top: -20px;
         margin-left: -20px;
         width: 50px;
